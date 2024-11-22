@@ -1,0 +1,144 @@
+/* General body and font styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff4e6, #ffe7d0);
+    color: #333;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar ul li a:hover {
+    color: #333;
+  }
+  
+  /* Billing Section Styling */
+  .billing-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Gradient from coral to yellow */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  }
+  
+  .billing-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Billing Form Styling */
+  .billing-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for form */
+  }
+  
+  .billing-form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .billing-form input, .billing-form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .billing-form input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .billing-form input[type="submit"]:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Billing Summary Styling */
+  .billing-summary {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  .billing-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .billing-summary .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff7e5f;
+  }
+  
+  .billing-summary .btn {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .billing-summary .btn:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

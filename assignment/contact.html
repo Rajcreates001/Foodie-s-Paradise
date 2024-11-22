@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Write your message here..." rows="6" required></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Food Website</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>

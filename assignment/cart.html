@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie's Paradise - Cart</title>
+  <link rel="stylesheet" href="styles/cart.css"> <!-- Updated CSS file -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li> <!-- Active class added -->
+        <li><a href="billing.html">Billing</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items"></div> <!-- Placeholder for dynamically added items -->
+      <div class="cart-summary">
+        <p><strong>Total Price:</strong> <span id="total-price">$0.00</span></p> <!-- Total price -->
+        <button class="btn" onclick="proceedToBilling()">Proceed to Billing</button> <!-- Button for proceeding to billing -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Foodie's Paradise. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts/cart.js"></script> <!-- Updated JS file -->
+</body>
+</html>

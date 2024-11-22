@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="feedback.html" class="active">Feedback</a></li>
+    </ul>
+  </header>
+
+  <section class="feedback-section">
+    <h1>We Value Your Feedback</h1>
+    <form id="feedback-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="">Choose a Rating</option>
+        <option value="5">Excellent</option>
+        <option value="4">Good</option>
+        <option value="3">Average</option>
+        <option value="2">Poor</option>
+        <option value="1">Terrible</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" placeholder="Your Comments" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Submit Feedback</button>
+    </form>
+    <div id="feedback-response"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Food Website</p>
+  </footer>
+
+  <script>
+    const feedbackForm = document.getElementById('feedback-form');
+    const feedbackResponse = document.getElementById('feedback-response');
+    feedbackForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      feedbackResponse.innerHTML = "<p>Thank you for your feedback!</p>";
+      feedbackForm.reset();
+    });
+  </script>
+</body>
+</html>

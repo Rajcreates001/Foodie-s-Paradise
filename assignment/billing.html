@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing</title>
+  <link rel="stylesheet" href="styles/billing.css">
+  <script defer src="scripts/billing.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="restaurants.html">Restaurants</a></li>
+      <li><a href="cart.html" class="active">Cart</a></li>
+    </ul>
+  </header>
+
+  <section class="billing-section">
+    <h1>Your Order</h1>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="billing-summary">
+      <h3>Total: $<span id="total-price">0.00</span></h3>
+      <button class="btn" id="checkout-button">Checkout</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Food Website</p>
+  </footer>
+</body>
+</html>

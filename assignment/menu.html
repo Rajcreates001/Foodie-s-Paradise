@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/menu.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </header>
+
+  <section class="menu-section">
+    <h1>Our Delicious Menu</h1>
+    <div class="menu-grid">
+      <!-- 20 Menu Items -->
+      <!-- Item 1 -->
+      <div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.dchqjONJhrMllqIkMeIZbwHaLH?rs=1&pid=ImgDetMain" alt="Spaghetti Carbonara">
+        <h3>Spaghetti Carbonara</h3>
+        <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+        <span class="price">₹1,049</span>
+        <button class="btn add-to-cart" data-name="Spaghetti Carbonara" data-price="1049">Add to Cart</button>
+      </div>
+      <!-- Item 2 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Caesar_Salad.jpg" alt="Caesar Salad">
+        <h3>Caesar Salad</h3>
+        <p>A fresh salad with crisp lettuce, parmesan, croutons, and Caesar dressing.</p>
+        <span class="price">₹729</span>
+        <button class="btn add-to-cart" data-name="Caesar Salad" data-price="729">Add to Cart</button>
+      </div>
+      <!-- Item 3 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Pepperoni_pizza.jpg" alt="Pepperoni Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p>Classic pizza topped with pepperoni, mozzarella, and a rich tomato sauce.</p>
+        <span class="price">₹1,219</span>
+        <button class="btn add-to-cart" data-name="Pepperoni Pizza" data-price="1219">Add to Cart</button>
+      </div>
+      <!-- Item 4 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Sushi_set.jpg" alt="Sushi Set">
+        <h3>Sushi Set</h3>
+        <p>Assorted sushi including salmon, tuna, and shrimp rolls with wasabi.</p>
+        <span class="price">₹1,499</span>
+        <button class="btn add-to-cart" data-name="Sushi Set" data-price="1499">Add to Cart</button>
+      </div>
+      <!-- Item 5 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Margarita_Pizza.jpg" alt="Margarita Pizza">
+        <h3>Margarita Pizza</h3>
+        <p>Classic pizza with fresh mozzarella, basil, and a drizzle of olive oil.</p>
+        <span class="price">₹1,089</span>
+        <button class="btn add-to-cart" data-name="Margarita Pizza" data-price="1089">Add to Cart</button>
+      </div>
+      <!-- Item 6 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Fried_chicken.jpg" alt="Fried Chicken">
+        <h3>Fried Chicken</h3>
+        <p>Crispy fried chicken served with mashed potatoes and gravy.</p>
+        <span class="price">₹889</span>
+        <button class="btn add-to-cart" data-name="Fried Chicken" data-price="889">Add to Cart</button>
+      </div>
+      <!-- Item 7 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Beef_Burger.jpg" alt="Beef Burger">
+        <h3>Beef Burger</h3>
+        <p>Juicy beef patty with lettuce, cheese, pickles, and special sauce.</p>
+        <span class="price">₹929</span>
+        <button class="btn add-to-cart" data-name="Beef Burger" data-price="929">Add to Cart</button>
+      </div>
+      <!-- Item 8 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Vegan_burger.jpg" alt="Vegan Burger">
+        <h3>Vegan Burger</h3>
+        <p>A delicious plant-based patty with avocado, lettuce, and tomato.</p>
+        <span class="price">₹1,139</span>
+        <button class="btn add-to-cart" data-name="Vegan Burger" data-price="1139">Add to Cart</button>
+      </div>
+      <!-- Item 9 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Grilled_Salmon.jpg" alt="Grilled Salmon">
+        <h3>Grilled Salmon</h3>
+        <p>Fresh salmon grilled to perfection, served with a side of vegetables.</p>
+        <span class="price">₹1,629</span>
+        <button class="btn add-to-cart" data-name="Grilled Salmon" data-price="1629">Add to Cart</button>
+      </div>
+      <!-- Item 10 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Pad_Thai.jpg" alt="Pad Thai">
+        <h3>Pad Thai</h3>
+        <p>Stir-fried rice noodles with shrimp, peanuts, and a tangy tamarind sauce.</p>
+        <span class="price">₹1,259</span>
+        <button class="btn add-to-cart" data-name="Pad Thai" data-price="1259">Add to Cart</button>
+      </div>
+      <!-- Item 11 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Vegetable_Soup.jpg" alt="Vegetable Soup">
+        <h3>Vegetable Soup</h3>
+        <p>A hearty soup with seasonal vegetables, perfect for cold days.</p>
+        <span class="price">₹649</span>
+        <button class="btn add-to-cart" data-name="Vegetable Soup" data-price="649">Add to Cart</button>
+      </div>
+      <!-- Item 12 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Grilled_Cheese_Sandwich.jpg" alt="Grilled Cheese Sandwich">
+        <h3>Grilled Cheese Sandwich</h3>
+        <p>Classic grilled cheese with a crispy, buttery golden brown crust.</p>
+        <span class="price">₹569</span>
+        <button class="btn add-to-cart" data-name="Grilled Cheese Sandwich" data-price="569">Add to Cart</button>
+      </div>
+      <!-- Item 13 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Burrito.jpg" alt="Burrito">
+        <h3>Burrito</h3>
+        <p>A large tortilla stuffed with beans, rice, cheese, and your choice of protein.</p>
+        <span class="price">₹849</span>
+        <button class="btn add-to-cart" data-name="Burrito" data-price="849">Add to Cart</button>
+      </div>
+      <!-- Item 14 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tacos.jpg" alt="Tacos">
+        <h3>Tacos</h3>
+        <p>Soft or hard shell tacos filled with your choice of meat, salsa, and cheese.</p>
+        <span class="price">₹799</span>
+        <button class="btn add-to-cart" data-name="Tacos" data-price="799">Add to Cart</button>
+      </div>
+      <!-- Item 15 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Sushi_rice.jpg" alt="Sushi Rice">
+        <h3>Sushi Rice</h3>
+        <p>Perfectly seasoned sushi rice to accompany your favorite sushi dishes.</p>
+        <span class="price">₹479</span>
+        <button class="btn add-to-cart" data-name="Sushi Rice" data-price="479">Add to Cart</button>
+      </div>
+      <!-- Item 16 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Ramen_bowl.jpg" alt="Ramen Bowl">
+        <h3>Ramen Bowl</h3>
+        <p>Japanese noodle soup with a rich broth, soft-boiled egg, and toppings.</p>
+        <span class="price">₹1,199</span>
+        <button class="btn add-to-cart" data-name="Ramen Bowl" data-price="1199">Add to Cart</button>
+      </div>
+      <!-- Item 17 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Paneer_Tikka.jpg" alt="Paneer Tikka">
+        <h3>Paneer Tikka</h3>
+        <p>Indian grilled cottage cheese cubes marinated in spices.</p>
+        <span class="price">₹749</span>
+        <button class="btn add-to-cart" data-name="Paneer Tikka" data-price="749">Add to Cart</button>
+      </div>
+      <!-- Item 18 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Chicken_Biryani.jpg" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p>Fragrant basmati rice cooked with chicken, saffron, and Indian spices.</p>
+        <span class="price">₹1,349</span>
+        <button class="btn add-to-cart" data-name="Chicken Biryani" data-price="1349">Add to Cart</button>
+      </div>
+      <!-- Item 19 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Chocolate_Cake.jpg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Decadent chocolate cake with layers of rich chocolate ganache.</p>
+        <span class="price">₹599</span>
+        <button class="btn add-to-cart" data-name="Chocolate Cake" data-price="599">Add to Cart</button>
+      </div>
+      <!-- Item 20 -->
+      <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Indian_Coffee.jpg" alt="Indian Filter Coffee">
+        <h3>Indian Filter Coffee</h3>
+        <p>Traditional South Indian coffee brewed with chicory for a unique taste.</p>
+        <span class="price">₹199</span>
+        <button class="btn add-to-cart" data-name="Indian Filter Coffee" data-price="199">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Food Website</p>
+  </footer>
+</body>
+</html>
